@@ -81,3 +81,10 @@ A program működése során az alkalmazott egy féle szerepkörben figyelhető 
 
 ## Architekturális terv
 A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A webalkalmazás Visual Studio Code-ban és PHP Storm-ban készül el.
+
+## Adatbázis terv
+A weboldalhoz készült az adatbázis, ennek a tervét mutatja a mellékelt ábra.
+![Adatbázis terv](https://github.com/csgery/SzelveszAuto/blob/main/Dokument%C3%A1ci%C3%B3/adatb%C3%A1zis_terv.jpg)
+
+## Implementációs terv
+A Webes felület főként HTML, CSS, és PHP nyelven fog készülni. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében.
