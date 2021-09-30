@@ -21,3 +21,22 @@
 
 -   Webfelület: Zettisch Márk, Bögös Bálint
 -   Adatbázis: Csépányi Gergely, Csomós Patrik
+
+## Üzleti folyamatok modellje
+- Üzleti szereplők:
+  - Alkalmazott
+  
+- Üzleti folyamatok:
+  - Feladatok felvitele módosítása
+  - Adatbázis hozzáférés
+
+## Követelmények
+ - Funkcionális
+    - Webes környezetben való működés
+    - A vásárlások és az ehhez tartozó adatok tárolása
+ - Nem funkcionális
+    - Gyors működés, vásárlások kilistázása
+    - Egyszerű, egyértelmű kezelés
+ - Törvényi előírások, szabványok
+    - GDPR követelményeinek való megfelelés
+
