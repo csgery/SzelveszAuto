@@ -40,3 +40,28 @@
  - Törvényi előírások, szabványok
     - GDPR követelményeinek való megfelelés
 
+## Funkcionális terv
+- Rendszerszereplők
+  - Admin
+  - Alkalmazott
+  - Vásárló
+  
+- Rendszerhasználati esetek és lefutásaik:
+  - Admin
+    * Autók megtekintése
+    * Autók hozzáadása, törlése, módosítása
+    * A rendszerhez való teljes hozzáférés
+
+  - Alkalmazott
+    * Autók megtekintése
+    * Autók hozzáadása, módosítása
+    * A rendszerhez való korlátozott hozzáférés
+
+  - Vásárló
+    * Autók megtekintése
+    * Autók vásárlása
+
+- Menü hierarchiák
+  - Kezdőlap
+    * Eladó autók
+    * Bejelentkezés/regisztráció
