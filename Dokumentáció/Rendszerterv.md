@@ -65,3 +65,19 @@
   - Kezdőlap
     * Eladó autók
     * Bejelentkezés/regisztráció
+
+## Fizikai környezet
+Kliens:
+   - Eszköz: Asztali számítógép, mobileszköz
+
+  -  Operációs rendszer: Független
+
+    - Szükséges applikációk: Web böngésző
+
+    - Konfiguráció: Nem specifikus.
+
+## Absztrakt domain modell
+A program működése során az alkalmazott egy féle szerepkörben figyelhető meg. Az alkalmazott képes autót hozzáadni és módosítani és számlát kiállítani.
+
+## Architekturális terv
+A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A webalkalmazás Visual Studio Code-ban és PHP Storm-ban készül el.
