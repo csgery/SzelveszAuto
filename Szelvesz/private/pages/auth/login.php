@@ -22,19 +22,24 @@ if(isset($_POST['submit'])) {
     <div class="card mt-md-auto p-5 align-middle align-content-center">
         <form method="post" enctype="multipart/form-data" class="form">
             <div class='card-header mb-2'>
-                <h4>Bejelentkezési felület</h4>
+                <h4>Bejelentkezés</h4>
             </div>
 
-            <div class='input-group p-3'>
+            <div class='input-group <?=  $errors ? $errorBorderClass : '' ?>  p-3'>
                 <label for='username' class='me-3'>Felhasználónév</label>
                 <input type="username" id="username" name="username" placeholder='Felhasználónév' class='form-control'>
             </div>
 
-            <div class='input-group p-3'>
+            <div class='input-group <?=  $errors ? $errorBorderClass : '' ?>  p-3'>
                 <label for='password' class='me-3'>Jelszó</label>
                 <input type="password" id="password" name="password" placeholder='********' class='form-control'>
             </div>
 
+            <?php if ($errors): ?>
+                <div class="alert alert-danger">
+                    <h5><?= $errors['_'][0];?></h5>
+                </div>
+            <?php endif; ?>
             <div class='input-group'>
                 <input name ="submit" id="submit" type="submit" value="Bejelentkezés" class='btn btn-primary' >
 
