@@ -22,3 +22,26 @@ function db_fetchAll(string $query, array $parameters = []): array
     return $statement->fetchAll();
 }
 
+function db_fetch(string $table, string $where = '1', array $parameters = []): array|false
+{
+    $statement = db_statement("SELECT * FROM $table WHERE $where LIMIT 1", $parameters);
+    return $statement->fetch();
+}
+
+function db_fetch_single(string $attribute, string $table, string $where = '1', array $parameters = []): array|false
+{
+    $statement = db_statement("SELECT $attribute FROM $table WHERE $where LIMIT 1", $parameters);
+    return $statement->fetch();
+}
+
+
+function db_execute(string $query, array $parameters = []): array
+{
+    $pdo = db_connect();
+    $statement = $pdo->prepare($query);
+    $statement->execute($parameters);
+    return [
+        'affected' => $statement->rowCount(),
+        'last' => $pdo->lastInsertId()
+    ];
+}
