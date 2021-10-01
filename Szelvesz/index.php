@@ -1,7 +1,8 @@
 <?php
 session_start();
 require_once 'private/lib/config.php';
-
+require_once 'private/lib/database.php';
+$PAGE = $_GET['p'] ?? 'home';
 
 
 ?>
