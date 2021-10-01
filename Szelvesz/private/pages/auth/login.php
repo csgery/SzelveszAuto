@@ -17,3 +17,41 @@ if(isset($_POST['submit'])) {
 
 ?>
 
+
+<?php if(!isset($_SESSION['user'])): ?>
+    <div class="card mt-md-auto p-5 align-middle align-content-center">
+        <form method="post" enctype="multipart/form-data" class="form">
+            <div class='card-header mb-2'>
+                <h4>Bejelentkezési felület</h4>
+            </div>
+
+            <div class='input-group p-3'>
+                <label for='username' class='me-3'>Felhasználónév</label>
+                <input type="username" id="username" name="username" placeholder='Felhasználónév' class='form-control'>
+            </div>
+
+            <div class='input-group p-3'>
+                <label for='password' class='me-3'>Jelszó</label>
+                <input type="password" id="password" name="password" placeholder='********' class='form-control'>
+            </div>
+
+            <div class='input-group'>
+                <input name ="submit" id="submit" type="submit" value="Bejelentkezés" class='btn btn-primary' >
+
+            </div>
+        </form>
+    </div>
+    </div>
+
+<?php else: ?>
+    <table class="table table-dark table-hover table-striped table-borderless table">
+
+        <thead>
+        <tr>
+
+            <th scope="col" class="text-center m-auto">Üdvözöljük <?= $_SESSION['user']['username'] ?>!<a class="btn-primary ms-3 btn-sm text-decoration-none" href="?p=home">Ok</a></th>
+
+        </tr>
+        </thead>
+    </table>
+<?php endif; ?>
