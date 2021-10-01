@@ -88,3 +88,13 @@ A weboldalhoz készült az adatbázis, ennek a tervét mutatja a mellékelt ábr
 
 ## Implementációs terv
 A Webes felület főként HTML, CSS, és PHP nyelven fog készülni. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében.
+
+## Tesztterv
+PHP alapú weboldal, amit PHPStorm-ban, illetve Visual Studio Code-ban írtunk, XAMPP programcsomagot használva.
+
+## Karbantartási terv
+-Az alkalmazás folyamatos üzemeltetése és karbantartása, mely
+magában foglalja a programhibák elhárítását, a belső igények változása miatti
+módosításokat, valamint a környezeti feltételek változása miatt
+megfogalmazott program-, illetve állomány módosítási igényeket.
+
