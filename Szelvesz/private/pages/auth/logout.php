@@ -1,3 +1,11 @@
+<?php
+session_unset();
+session_destroy();
+
+
+
+?>
+
 <table class="table table-dark table-hover table-striped table-borderless table">
 
     <thead>
