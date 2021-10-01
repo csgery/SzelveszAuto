@@ -40,7 +40,8 @@
             <tr>
                 <th scope="col">Irányítószám</th>
                 <th scope="col">Város</th>
-
+                <th scope="col">Utca</th>
+                <th scope="col">Házszám</th>
 
             </tr>
         </thead>
@@ -49,6 +50,8 @@
             <tr>
                 <td scope="row"> <?= $user['postal_code'] ?> </td>
                 <td><?= $user['city'] ?></td>
+                <td><?= $user['street'] ?></td>
+                <td><?= $user['house_number'] ?></td>
             </tr>
         </tbody>
 
