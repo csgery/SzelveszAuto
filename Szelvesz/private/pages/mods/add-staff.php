@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
         db_execute('INSERT INTO `users` (username, email, password, auth) VALUES (:username, :email, :password, :auth)', [
             ':username' => $_POST['username'],
             ':email' => $_POST['email'],
-            ':passord' => password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]),
+            ':password' => password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]),
             ':auth' => 1
         ]);
     }
