@@ -1,22 +1,14 @@
 <?php
 
+    $passiveOrders = db_fetchall('SELECT * FROM orders WHERE is_arrived = 1;');
 
-
-$passiveOrders = db_fetchall('SELECT * FROM orders WHERE is_arrived = 1;');
-
-if(isset($_POST['submit'])) {
-
-    if($_POST['reset_order']){
-        foreach ($_POST['reset_order']['order_id'] as $order_id => $value){
-            db_execute('UPDATE orders SET preparing = 0, is_shipped = 0, is_arrived = 0 WHERE order_id = :order_id', [':order_id' => $order_id]);
-
+    if(isset($_POST['submit'])) {
+        if($_POST['reset_order']) {
+            foreach ($_POST['reset_order']['order_id'] as $order_id => $value) {
+                db_execute('UPDATE orders SET preparing = 0, is_shipped = 0, is_arrived = 0 WHERE order_id = :order_id', [':order_id' => $order_id]);
+            }
         }
     }
-
-
-
-}
-
 
 ?>
 
