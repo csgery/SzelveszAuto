@@ -1,8 +1,6 @@
 <?php
 
-
 ?>
-
 
 <table class="table table-dark table-hover table-striped table-borderless align-middle mx-auto mt-5 text-center ">
     <?php $usersCount = db_fetchall('SELECT count(username) FROM users') ?>
