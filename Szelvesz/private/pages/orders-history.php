@@ -99,10 +99,29 @@ if(isset($_POST['submit'])) {
                 </div>
             <?php endif;?>
 
-        
+            
+            <?php if(!empty($passiveOrders)): ?>
+                <tfoot>
+                    <tr>
+                        <div class="d-grid gap-2">
+                            <th scope="col" class="text-end m-auto" colspan="9"><a class="btn btn-primary ms-3 btn-sm" href="./passive-orders-export.php">Teljesített rendelések letöltése</a></th>
+                        </div>
+                    </tr>
+                </tfoot>
+            <?php endif;?>
+
         </table>
         </form>
     
+            <?php else: ?>
+                <table class="table table-dark table-hover table-striped table-borderless table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">Jelenleg nincs rendelési előzmény! <a href="?p=orders" class="text-decoration-none btn-primary btn-sm">Ok</a> </th>
+                        </tr>
+                    </thead>
+                </table>
+            <?php endif; ?>
 
 <?php elseif(count(($_POST)) == 1):?>
     <table class="table table-dark table-hover table-striped table-borderless table">
