@@ -1,4 +1,5 @@
 <?php
+    $orders = db_fetchAll('SELECT * FROM orders WHERE is_arrived = 0;');
 ?>
 
     <form method="post" >
