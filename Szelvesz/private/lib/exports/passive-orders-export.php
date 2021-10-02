@@ -3,7 +3,7 @@
 require_once 'private/lib/config.php';
 require_once 'private/lib/database.php';
 
-$data = db_fetchall('SELECT order_id, username, car_id, order_date, preparing, is_shipped, is_arrived FROM orders WHERE is_arrived = 0');
+$data = db_fetchall('SELECT order_id, username, car_id, order_date, arrived_at FROM orders WHERE is_arrived = 1');
 exportCSV($data);
 
 function exportCSV(array $array){
