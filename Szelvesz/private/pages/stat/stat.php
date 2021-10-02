@@ -101,15 +101,15 @@
     <tbody>
     <?php $counter = 1; ?>
     <?php foreach ($orderers as $orderer):?>
-        <?php $activeOrderCount = db_fetch('SELECT count(order_id) FROM orders WHERE username LIKE :username AND is_arrived = 0', ['username' => $orderer['username']]); ?>
-        <?php $activeOrderPrice = db_fetch('SELECT sum(price) FROM cars INNER JOIN orders ON orders.car_id = cars.id WHERE username = :username AND is_arrived =0 ', [':username'=> $orderer['username']]); ?>
-        <?php $passiveOrderCount = db_fetch('SELECT count(order_id) FROM orders WHERE username LIKE :username AND is_arrived = 1', ['username' => $orderer['username']]) ?>
-        <?php $passiveOrderPrice = db_fetch('SELECT sum(price) FROM cars INNER JOIN orders ON orders.car_id = cars.id WHERE username = :username AND is_arrived =1 ', [':username'=> $orderer['username']]); ?>
+        <?php $activeOrderCount = db_fetchall('SELECT count(order_id) FROM orders WHERE username LIKE :username AND is_arrived = 0', ['username' => $orderer['username']]); ?>
+        <?php $activeOrderPrice = db_fetchall('SELECT sum(price) FROM cars INNER JOIN orders ON orders.car_id = cars.id WHERE username = :username AND is_arrived =0 ', [':username'=> $orderer['username']]); ?>
+        <?php $passiveOrderCount = db_fetchall('SELECT count(order_id) FROM orders WHERE username LIKE :username AND is_arrived = 1', ['username' => $orderer['username']]) ?>
+        <?php $passiveOrderPrice = db_fetchall('SELECT sum(price) FROM cars INNER JOIN orders ON orders.car_id = cars.id WHERE username = :username AND is_arrived =1 ', [':username'=> $orderer['username']]); ?>
        <tr>
             <th scope="row"><?= $counter ?>.</th>
             <td><?= $orderer['username'];?></td>
 
-            <td><?= db_fetch('email','users', 'username LIKE :username', [':username' => $orderer['username']])['email'];?></td>
+            <td><?= db_fetch_single('email','users', 'username LIKE :username', [':username' => $orderer['username']])['email'];?></td>
 
             <?php if($activeOrderCount[0]['count(order_id)'] < 1):?>
                 <td>0</td>
