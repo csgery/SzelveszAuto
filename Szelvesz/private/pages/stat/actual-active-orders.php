@@ -40,34 +40,25 @@
 </table>
 
 <table class="table table-dark table-hover table-striped table-borderless align-middle mx-auto mt-5 text-center ">
-    <thead>
-    <tr>
-        <th scope="col" colspan="4" class="text-primary">Szállítási adatok</th>
-    </tr>
-    <tr>
-        <th scope="col">Város</th>
-        <th scope="col">Utca</th>
-        <th scope="col">Házszám</th>
-
-
-    </tr>
-    </thead>
+        <thead>
+            <tr>
+                <th scope="col" colspan="4" class="text-primary">Szállítási adatok</th>
+            </tr>
+            <tr>
+                <th scope="col">Irányítószám</th>
+                <th scope="col">Város</th>
+                <th scope="col">Utca</th>
+                <th scope="col">Házszám</th>
+            </tr>
+        </thead>
 
     <tbody>
-
-
-
-
-    <tr>
-        <td><?= $user['city'] ?></td>
-        <td><?= $user['street'] ?></td>
-        <td><?= $user['house_number'] ?></td>
-    </tr>
-
-
-
-
-
+        <tr>
+            <td scope="row"> <?= $user['postal_code'] ?> </td>
+            <td><?= $user['city'] ?></td>
+            <td><?= $user['street'] ?></td>
+            <td><?= $user['house_number'] ?></td>
+        </tr>
     </tbody>
 
 </table>
