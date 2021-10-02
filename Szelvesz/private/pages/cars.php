@@ -61,7 +61,25 @@ $cars = db_fetchall('SELECT * FROM cars ORDER BY name');
 
         </tbody>
 
-        
+        <tfoot>
+            <?php if($_SESSION['user']['auth'] === 0):?>
+                <th scope="row" colspan="8"><a href="?p=mods/add-car" class="text-decoration-none">Új autó hozzáadása</a></th>
+            <?php endif; ?>
+        </tfoot>
+    </table>
+<?php else: ?>
+    <table class="table table-dark table-hover table-striped table-borderless align-middle mx-auto mt-3 text-center ">
+        <thead>
+        <tr>
+            <th scope="col" colspan="8" >Jelenleg nincsenek eladó autók! <a href="?p=home" class="btn btn-primary btn-sm">Ok</a></th>
+        </tr>
+        </thead>
+
+        <tfoot>
+        <?php if($_SESSION['user']['auth'] === 0):?>
+            <th scope="row" colspan="8" class="text-center align-middle"><a href="?p=mods/add-car" class="text-decoration-none">Új autó hozzáadása</a></th>
+        <?php endif; ?>
+        </tfoot>
 
     </table>
 
