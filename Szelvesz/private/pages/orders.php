@@ -1,7 +1,82 @@
 <?php
-    $orders = db_fetchAll('SELECT * FROM orders WHERE is_arrived = 0;');
+
+
+$orders = db_fetchAll('SELECT * FROM orders WHERE is_arrived = 0;');
+
+
+if(isset($_POST['submit'])){
+    if($_POST['preparing']){
+        foreach ($_POST['preparing']['order_id'] as $order_id => $value){
+            db_execute('UPDATE orders SET preparing = :preparing WHERE order_id = :order_id;', [
+                    ':preparing' => $value,
+                    ':order_id' => $order_id
+            ]);
+
+        }
+
+    }
+
+    if($_POST['is_shipped']){
+        foreach ($_POST['is_shipped']['order_id'] as $order_id => $value){
+            db_execute('UPDATE orders SET is_shipped = :is_shipped, preparing = :preparing WHERE order_id = :order_id;', [
+                ':is_shipped' => $value,
+                ':preparing' => $value,
+                ':order_id' => $order_id
+            ]);
+
+        }
+
+    }
+
+    if($_POST['is_arrived']){
+        foreach ($_POST['is_arrived']['order_id'] as $order_id => $value){
+            db_execute('UPDATE orders SET arrived_at = :arrived_at, is_arrived = :is_arrived, is_shipped = :is_shipped, preparing = :preparing WHERE order_id = :order_id;', [
+                'arrived_at' => date("Y-m-d H:i:s"),
+                ':is_arrived' => $value,
+                ':is_shipped' => $value,
+                ':preparing' => $value,
+                ':order_id' => $order_id
+            ]);
+
+        }
+
+    }
+
+
+    if($_POST['reset_order']){
+        foreach ($_POST['reset_order']['order_id'] as $order_id => $value){
+            db_execute('UPDATE orders SET preparing = 0, is_shipped = 0 WHERE order_id = :order_id', [':order_id' => $order_id]);
+
+        }
+    }
+
+
+
+    if($_POST['delete_order']){
+        foreach ($_POST['delete_order']['order_id'] as $order_id => $value){
+            db_execute('UPDATE cars SET is_deleted = 0 WHERE cars.id = (SELECT car_id FROM orders WHERE order_id = :order_id)', [':order_id' => $order_id]);
+            db_execute('DELETE FROM orders WHERE order_id = :order_id', [':order_id' => $order_id]);
+
+
+
+        }
+    }
+
+
+
+
+
+}
+
+
+
 ?>
 
+
+
+
+<?php if(!isset($_POST['submit'])): ?>
+    <?php if(!empty($orders)): ?>
     <form method="post" >
     <table class="table table-dark table-hover table-striped table-borderless align-middle mx-auto mt-3 text-center">
 
