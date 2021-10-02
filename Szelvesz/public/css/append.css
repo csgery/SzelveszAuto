@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;600&display=swap');
+
+body {
+    font-family: 'Antonio', sans-serif;
+    background: url('../img/wallpaper.jpg') no-repeat;
+    background-size: cover;
+}
+
+* {
+
+    font-size: 24px;
+}
+
+header .costum-header {
+    background: url("../img/wallpaper2.jpg");
+    font-family: 'Antonio', sans-serif;
+    color: aliceblue;
+    font-size:56px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav a:hover {
+    background: rgba(233,233,234,.4);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 ;
+    margin: 0 ;
+}
+
+table {
+    max-width: 90%;
+    margin: 10% auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 20px ;
+}
+
+th, td {
+    font-size: 22px;
+
+}
+th, td, a{
+    font-size: 22px;
+}
+
+footer {
+    background: rgba(0, 0, 00,.9);
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    display: block;
+}
+
+footer:after {
+    content:'';
+    clear: both;
+    display: table;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    float: left;
+}
+
+footer a:hover {
+    background: rgba(255, 255, 255,.6);
+}
+
+article p{
+    text-align: justify;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
