@@ -1,3 +1,25 @@
+<?php
+
+if(isset($_POST['shopping-submit'])) {
+    if(isset($_SESSION['user']['lastname'])) {
+        db_execute('INSERT INTO orders (order_id, username, car_id) VALUES (:order_id, :username, :car_id);', [
+
+            ':order_id' => uniqid('', true),
+            ':username' => $_SESSION['user']['username'],
+            ':car_id' => $_GET['id']
+
+        ]);
+
+        db_execute('UPDATE cars SET is_deleted = :is_deleted WHERE id = :id;', [
+
+            ':is_deleted' => 1,
+            ':id' => $_GET['id']
+
+        ]);
+    }
+}
+?>
+
 <?php if(!isset($_SESSION['user']['lastname'])):?>
 <table class="table table-dark table-hover table-striped table-borderless table">
     <thead>
@@ -6,6 +28,15 @@
     </tr>
     </thead>
 </table>
+
+<?php elseif(isset($_POST['shopping-submit'])): ?>
+    <table class="table table-dark table-hover table-striped table-borderless">
+        <thead>
+        <tr>
+            <th scope="col" class="text-center m-auto">Sikeres vásárlás!<a class="btn btn-primary ms-3 btn-sm" href="?p=404">Ok</a></th>
+        </tr>
+        </thead>
+    </table>
 
 <?php else: ?>
     <?php $user = db_fetch('users', 'username LIKE :username', [':username' => $_SESSION['user']['username']]); ?>
