@@ -9,7 +9,7 @@
 |T7| Csépányi Gergely | 2021.10.03. 11:11| Felhasználók törlése az adatbázisból | Bizonyos felhasználó adatainak törlése az adatbázisból.| Adatok törlése az adatbázisból| Adott felhasználó adatai törlődtek az adatbázisból| Beta 1.4 |
 |T8| Bögös Bálint | 2021.10.03. 13:00| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Kép feltöltési hibát dob | Beta 1.4 |
 |T9| Bögös Bálint | 2021.10.03. 13:10| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Relációs hiba | Beta 1.5 |
-
+|T8| Bögös Bálint | 2021.10.03. 13:17| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Az ID-t automatikus generálja. A megadott adatok bekerültek az adatbázisba | Beta 1.6 |
 
 
 # Szélsőérték funkcionális teszt
@@ -18,3 +18,4 @@
 |T1| Zettisch Márk| 2021.10.03 10:23 | Regisztráció ellenőrzése |Leellenőrizöm, hogy egyik mező se lehet üres, névnek legalább 6, a jelszónak legalább 8 karakteresnek kell lennie, és az emailban nem lehet speciális karakter .|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a honlap.| Beta 1.2 |
 |T2| Csépányi Gergely | 2021.10.03. 10:45| Alkalmazott regisztráció ellenőrzése |Leellenőrzöm, hogy egyik mező sem lehet üres, névnek legalább 3, a jelszónak legalább 8 karakternek kell lennie, és az emailban nem lehet speciális karakter .|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a weboldal.| Beta 1.3 |
 |T3| Csépányi Gergely | 2021.10.03. 10:47| Felhasználók módosított adatainak az ellenőrzése |Leellenőrzöm, hogy egyik mező se lehet üres, névnek legalább 3, a jelszónak legalább 8 karakteresnek kell lennie, és az emailban nem lehet speciális karakter .|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Jelszó ellenőrzésnél relációs hiba| Beta 1.3 |
+|T4| Bögös Bálint | 2021.10.03. 13:23| Autó feltöltés ellenőrzése |Leellenőrzöm, hogy egyik mező se lehet üres, névnek legalább 2 karakternek kell lennie, az árának pedig 1 és 2,1 milliárd között kell lennie.|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a honlap. | Beta 1.6 |

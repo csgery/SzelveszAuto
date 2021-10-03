@@ -7,7 +7,7 @@ function validateFileUpload(string $tmpPath, string $targetPath, string $fileTyp
         $uploadErrors['image'][] = 'Autó képe nem lehet üres!';
     }
 
-    elseif (isset($_FILES['image'])
+    elseif (!isset($_FILES['image'])
         || !file_exists($tmpPath)
         || $_FILES['image']['size'] !== filesize($tmpPath)
     ) {
@@ -20,7 +20,7 @@ function validateFileUpload(string $tmpPath, string $targetPath, string $fileTyp
         $uploadErrors['image'][] = 'Nem támogatott a kép formátuma (Támogatott: jpg/jpeg/bmp/png).';
     }
 
-    elseif ($_FILES['image']['size'] < 9_000_000) {
+    elseif ($_FILES['image']['size'] > 9_000_000) {
         $uploadErrors['image'][] = 'A kép nagyobb, mint 9MB.';
     }
 

@@ -9,7 +9,13 @@ function validate_car_reg(array $request): array{
         $error['name'][] = 'Autó neve legalább 2 karakter!';
     }
 
+    if(empty($request['model'])){
+        $error['model'][] = 'Autó modell nem lehet üres!';
+    }
 
+    if(empty($request['colour'])){
+        $error['colour'][] = 'Autó színe nem lehet üres!';
+    }
     
 
     if(empty($request['price'])){
