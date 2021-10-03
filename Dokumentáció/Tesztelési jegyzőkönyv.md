@@ -13,6 +13,7 @@
 |T11| Bögös Bálint | 2021.10.03. 13:30| Autók listázása | Az adatbázisban lévő autók adatainak a megjelenítése a képernyőn | Adatok megjelenése| Az autók adatai abc szerinti sorban megjelennek a képernyőn | Beta 1.6 |
 |T12| Bögös Bálint | 2021.10.03. 13:36| Autók módosítása az adatbázisban | A kiválasztott autó módosított adatainak frissülnie kell az adatbázisban | Adatok változása az adatbázisban| Nem tölti be a módosításhoz szükséges formot a honlap | Beta 1.6 |
 |T13| Bögös Bálint | 2021.10.03. 13:40| Autók módosítása az adatbázisban | A kiválasztott autó módosított adatainak frissülnie kell az adatbázisban | Adatok változása az adatbázisban| A változtatott adatok frissülnek az adatbázisban | Beta 1.7 |
+|T14| Bögös Bálint | 2021.10.03. 13:47| Autók törlése az adatbázisból | A kiválasztott autó adatainak törlése az adatbázisból | Adatok törlése az adatbázisból| 404-es hibát dob a honlap | Beta 1.7 |
 
 
 # Szélsőérték funkcionális teszt
