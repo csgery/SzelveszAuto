@@ -128,7 +128,7 @@ else{
 
 ?>
 
-<?php if(isset($_POST['submit']) || $errors || $uploadErrors):?>
+<?php if(!isset($_POST['submit']) || $errors || $uploadErrors):?>
     <div class="card mt-md-auto p-5 align-middle align-content-center">
         <form method="post" enctype="multipart/form-data" class="form">
             <div class='card-header mb-2'>

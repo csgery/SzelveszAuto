@@ -12,6 +12,7 @@
 |T10| Bögös Bálint | 2021.10.03. 13:17| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Az ID-t automatikus generálja. A megadott adatok bekerültek az adatbázisba | Beta 1.6 |
 |T11| Bögös Bálint | 2021.10.03. 13:30| Autók listázása | Az adatbázisban lévő autók adatainak a megjelenítése a képernyőn | Adatok megjelenése| Az autók adatai abc szerinti sorban megjelennek a képernyőn | Beta 1.6 |
 |T12| Bögös Bálint | 2021.10.03. 13:36| Autók módosítása az adatbázisban | A kiválasztott autó módosított adatainak frissülnie kell az adatbázisban | Adatok változása az adatbázisban| Nem tölti be a módosításhoz szükséges formot a honlap | Beta 1.6 |
+|T13| Bögös Bálint | 2021.10.03. 13:40| Autók módosítása az adatbázisban | A kiválasztott autó módosított adatainak frissülnie kell az adatbázisban | Adatok változása az adatbázisban| A változtatott adatok frissülnek az adatbázisban | Beta 1.7 |
 
 
 # Szélsőérték funkcionális teszt
@@ -21,3 +22,4 @@
 |T2| Csépányi Gergely | 2021.10.03. 10:45| Alkalmazott regisztráció ellenőrzése |Leellenőrzöm, hogy egyik mező sem lehet üres, névnek legalább 3, a jelszónak legalább 8 karakternek kell lennie, és az emailban nem lehet speciális karakter .|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a weboldal.| Beta 1.3 |
 |T3| Csépányi Gergely | 2021.10.03. 10:47| Felhasználók módosított adatainak az ellenőrzése |Leellenőrzöm, hogy egyik mező se lehet üres, névnek legalább 3, a jelszónak legalább 8 karakteresnek kell lennie, és az emailban nem lehet speciális karakter .|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Jelszó ellenőrzésnél relációs hiba| Beta 1.3 |
 |T4| Bögös Bálint | 2021.10.03. 13:23| Autó feltöltés ellenőrzése |Leellenőrzöm, hogy egyik mező se lehet üres, névnek legalább 2 karakternek kell lennie, az árának pedig 1 és 2,1 milliárd között kell lennie.|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a honlap. | Beta 1.6 |
+|T5| Bögös Bálint | 2021.10.03. 13:42| Autó módosítás ellenőrzése |Leellenőrzöm, hogy egyik mező se lehet üres, névnek legalább 2 karakternek kell lennie, az árának pedig 1 és 2,1 milliárd között kell lennie.|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a honlap. | Beta 1.7 |
