@@ -9,7 +9,8 @@
 |T7| Csépányi Gergely | 2021.10.03. 11:11| Felhasználók törlése az adatbázisból | Bizonyos felhasználó adatainak törlése az adatbázisból.| Adatok törlése az adatbázisból| Adott felhasználó adatai törlődtek az adatbázisból| Beta 1.4 |
 |T8| Bögös Bálint | 2021.10.03. 13:00| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Kép feltöltési hibát dob | Beta 1.4 |
 |T9| Bögös Bálint | 2021.10.03. 13:10| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Relációs hiba | Beta 1.5 |
-|T8| Bögös Bálint | 2021.10.03. 13:17| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Az ID-t automatikus generálja. A megadott adatok bekerültek az adatbázisba | Beta 1.6 |
+|T10| Bögös Bálint | 2021.10.03. 13:17| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Az ID-t automatikus generálja. A megadott adatok bekerültek az adatbázisba | Beta 1.6 |
+|T11| Bögös Bálint | 2021.10.03. 13:30| Autók listázása | Az adatbázisban lévő autók adatainak a megjelenítése a képernyőn | Adatok megjelenése| Az autók adatai abc szerinti sorban megjelennek a képernyőn | Beta 1.6 |
 
 
 # Szélsőérték funkcionális teszt
