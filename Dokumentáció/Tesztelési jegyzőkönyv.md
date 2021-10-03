@@ -3,9 +3,15 @@
 |T1| Zettisch Márk | 2021. 10. 03. 9:50 | Felhasználó regisztrálása | A regisztrációs formban felvettük az adatokat. Az adatbázist PDO-ban kérdezzük le.| Adatbázisban való megjelenés| Szintaktikai hiba a registration.php fájlban, ami fatal errort dobott. | Beta 1.1 |
 |T2| Zettisch Márk| 2021.10.03. 10:02 | Felhasználó regisztrálása | A regisztrációs formban felvettük az adatokat. Az adatbázist PDO-ban kérdezzük le.| Adatbázisban való megjelenés | Az ID-t automatikus generálja. email és név adatait bekerültek az adatbázisba | Beta 1.2 |
 |T3| Zettisch Márk| 2021.10.03. 10:11 | Bejelentkezés |A bejelentkezés formban összehasonlításra kerülnek a megadott adatok az adatbázisban lévőkkel.| Sikeres bejelentkezés után tudnak vásárolni | A program sikeresen összehasonlította a megadott adatokat az adatbázisban lévőkkel és megtörtént a bejelentkezés | Beta 1.2 |
+|T4| Csépányi Gergely | 2021.10.03. 10:38| Alkalmazott felvétele az adatbázisba | A felvenni kívánt alkalmazottnak meg kell jelennie az adatbázisban.| Adatbázisban való megjelenés| Szintaktikai hiba a staffs.php-ban, fatal error | Beta 1.2 |
+|T5| Csépányi Gergely | 2021.10.03. 10:40| Alkalmazott felvétele az adatbázisba | A felvenni kívánt alkalmazottnak meg kell jelennie az adatbázisban.| Adatbázisban való megjelenés| A rögzített felhasználó megjelenik az adatbázisban | Beta 1.3 |
+|T6| Csépányi Gergely | 2021.10.03. 10:57| Felhasználók módosítása az adatbázisba | A módosított adatoknak frissülnie kell az adatbázisban.| Adatok változása az adatbázisban| A módosított adatok megjelennek az adatbázisban| Beta 1.3 |
+|T7| Csépányi Gergely | 2021.10.03. 11:11| Felhasználók törlése az adatbázisból | Bizonyos felhasználó adatainak törlése az adatbázisból.| Adatok törlése az adatbázisból| Adott felhasználó adatai törlődtek az adatbázisból| Beta 1.4 |
 
 
 # Szélsőérték funkcionális teszt
 | Sorszám |Név | Dátum| Funkció leírása| Vizsgálat módja/eszköze, részletes leírása | Elvárt eredmény| Eredmény |Verzió |
 |--|--|--|--|--|--|--|--|
 |T1| Zettisch Márk| 2021.10.03 10:23 | Regisztráció ellenőrzése |Leellenőrizöm, hogy egyik mező se lehet üres, névnek legalább 6, a jelszónak legalább 8 karakteresnek kell lennie, és az emailban nem lehet speciális karakter .|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a honlap.| Beta 1.2 |
+|T2| Csépányi Gergely | 2021.10.03. 10:45| Alkalmazott regisztráció ellenőrzése |Leellenőrzöm, hogy egyik mező sem lehet üres, névnek legalább 3, a jelszónak legalább 8 karakternek kell lennie, és az emailban nem lehet speciális karakter .|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a weboldal.| Beta 1.3 |
+|T3| Csépányi Gergely | 2021.10.03. 10:47| Felhasználók módosított adatainak az ellenőrzése |Leellenőrzöm, hogy egyik mező se lehet üres, névnek legalább 3, a jelszónak legalább 8 karakteresnek kell lennie, és az emailban nem lehet speciális karakter .|Ha valamit rosszul adunk meg, akkor egy hibaüzenetet kell dobnia.| Jelszó ellenőrzésnél relációs hiba| Beta 1.3 |
