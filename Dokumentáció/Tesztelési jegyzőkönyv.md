@@ -8,6 +8,8 @@
 |T6| Csépányi Gergely | 2021.10.03. 10:57| Felhasználók módosítása az adatbázisba | A módosított adatoknak frissülnie kell az adatbázisban.| Adatok változása az adatbázisban| A módosított adatok megjelennek az adatbázisban| Beta 1.3 |
 |T7| Csépányi Gergely | 2021.10.03. 11:11| Felhasználók törlése az adatbázisból | Bizonyos felhasználó adatainak törlése az adatbázisból.| Adatok törlése az adatbázisból| Adott felhasználó adatai törlődtek az adatbázisból| Beta 1.4 |
 |T8| Bögös Bálint | 2021.10.03. 13:00| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Kép feltöltési hibát dob | Beta 1.4 |
+|T9| Bögös Bálint | 2021.10.03. 13:10| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Relációs hiba | Beta 1.5 |
+
 
 
 # Szélsőérték funkcionális teszt
