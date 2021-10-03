@@ -11,6 +11,7 @@
 |T9| Bögös Bálint | 2021.10.03. 13:10| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Relációs hiba | Beta 1.5 |
 |T10| Bögös Bálint | 2021.10.03. 13:17| Autók felvétele az adatbázisba | Az autók felvétele formban felvesszük az adatokat | Adatok megjelenése az adatbázisban| Az ID-t automatikus generálja. A megadott adatok bekerültek az adatbázisba | Beta 1.6 |
 |T11| Bögös Bálint | 2021.10.03. 13:30| Autók listázása | Az adatbázisban lévő autók adatainak a megjelenítése a képernyőn | Adatok megjelenése| Az autók adatai abc szerinti sorban megjelennek a képernyőn | Beta 1.6 |
+|T12| Bögös Bálint | 2021.10.03. 13:36| Autók módosítása az adatbázisban | A kiválasztott autó módosított adatainak frissülnie kell az adatbázisban | Adatok változása az adatbázisban| Nem tölti be a módosításhoz szükséges formot a honlap | Beta 1.6 |
 
 
 # Szélsőérték funkcionális teszt
