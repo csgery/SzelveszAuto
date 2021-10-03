@@ -1,2 +1,3 @@
 | Sorszám |Név | Dátum| Funkció leírása| Vizsgálat módja/eszköze, részletes leírása | Elvárt eredmény| Eredmény |Verzió |
 |--|--|--|--|--|--|--|--|
+|T1| Zettisch Márk | 2021. 10. 03. 9:50 | Felhasználó regisztrálása | A regisztrációs formban felvettük az adatokat. Az adatbázist PDO-ban kérdezzük le.| Adatbázisban való megjelenés| Szintaktikai hiba a registration.php fájlban, ami fatal errort dobott. | Beta 1.1 |
