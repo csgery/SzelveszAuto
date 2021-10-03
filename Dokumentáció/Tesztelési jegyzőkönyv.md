@@ -2,3 +2,4 @@
 |--|--|--|--|--|--|--|--|
 |T1| Zettisch Márk | 2021. 10. 03. 9:50 | Felhasználó regisztrálása | A regisztrációs formban felvettük az adatokat. Az adatbázist PDO-ban kérdezzük le.| Adatbázisban való megjelenés| Szintaktikai hiba a registration.php fájlban, ami fatal errort dobott. | Beta 1.1 |
 |T2| Zettisch Márk| 2021.10.03. 10:02 | Felhasználó regisztrálása | A regisztrációs formban felvettük az adatokat. Az adatbázist PDO-ban kérdezzük le.| Adatbázisban való megjelenés | Az ID-t automatikus generálja. email és név adatait bekerültek az adatbázisba | Beta 1.2 |
+|T3| Zettisch Márk| 2021.10.03. 10:11 | Bejelentkezés |A bejelentkezés formban összehasonlításra kerülnek a megadott adatok az adatbázisban lévőkkel.| Sikeres bejelentkezés után tudnak vásárolni | A program sikeresen összehasonlította a megadott adatokat az adatbázisban lévőkkel és megtörtént a bejelentkezés | Beta 1.2 |
