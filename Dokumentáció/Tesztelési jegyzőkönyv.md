@@ -16,6 +16,7 @@
 |T14| Bögös Bálint | 2021.10.03. 13:47| Autók törlése az adatbázisból | A kiválasztott autó adatainak törlése az adatbázisból | Adatok törlése az adatbázisból| 404-es hibát dob a honlap | Beta 1.7 |
 |T15| Bögös Bálint | 2021.10.03. 13:51| Autók törlése az adatbázisból | A kiválasztott autó adatainak törlése az adatbázisból | Adatok törlése az adatbázisból| Kiválasztott autó adatai törlődtek az adatbázisból | Beta 1.8 |
 |T16| Bögös Bálint | 2021.10.04. 09:39| Rendelések felvétele | Vásárlás után a rendelések tábla módosul és a választott autót töröltre állítja | Az autó kikerül a megtekinthetők közül és bekerül a saját rendelésekhez| Hibás átirányítás | Beta 1.8 |
+|T17| Bögös Bálint | 2021.10.04. 09:44| Rendelések felvétele | Vásárlás után a rendelések tábla módosul és a választott autót töröltre állítja | Az autó kikerül a megtekinthetők közül és bekerül a saját rendelésekhez| Sikeresen megtörténik a vásárlás | Beta 1.9 |
 
 
 # Szélsőérték funkcionális teszt

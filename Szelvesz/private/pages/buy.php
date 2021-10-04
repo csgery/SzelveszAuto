@@ -33,7 +33,7 @@ if(isset($_POST['shopping-submit'])) {
     <table class="table table-dark table-hover table-striped table-borderless">
         <thead>
         <tr>
-            <th scope="col" class="text-center m-auto">Sikeres vásárlás!<a class="btn btn-primary ms-3 btn-sm" href="?p=404">Ok</a></th>
+            <th scope="col" class="text-center m-auto">Sikeres vásárlás!<a class="btn btn-primary ms-3 btn-sm" href="?p=my-orders&username=<?= $_SESSION['user']['username'] ?>">Ok</a></th>
         </tr>
         </thead>
     </table>
