@@ -18,6 +18,7 @@
 |T16| Bögös Bálint | 2021.10.04. 09:39| Rendelések felvétele | Vásárlás után a rendelések tábla módosul és a választott autót töröltre állítja | Az autó kikerül a megtekinthetők közül és bekerül a saját rendelésekhez| Hibás átirányítás | Beta 1.8 |
 |T17| Bögös Bálint | 2021.10.04. 09:44| Rendelések felvétele | Vásárlás után a rendelések tábla módosul és a választott autót töröltre állítja | Az autó kikerül a megtekinthetők közül és bekerül a saját rendelésekhez| Sikeresen megtörténik a vásárlás | Beta 1.9 |
 |T18| Bögös Bálint | 2021.10.04. 09:51| Rendelések listázása | Kiválasztott megrendelő adatainak kilistázása | Megrendelő személyes adatai megjelenítése a képernyőn| A szállítási adatok nem jelennek meg | Beta 1.9 |
+|T19| Bögös Bálint | 2021.10.04. 09:51| Rendelések listázása | Kiválasztott megrendelő adatainak kilistázása | Megrendelő személyes adatai megjelenítése a képernyőn| Minden adat megfelelően megjelenik | Beta 1.10 |
 
 # Szélsőérték funkcionális teszt
 | Sorszám |Név | Dátum| Funkció leírása| Vizsgálat módja/eszköze, részletes leírása | Elvárt eredmény| Eredmény |Verzió |
