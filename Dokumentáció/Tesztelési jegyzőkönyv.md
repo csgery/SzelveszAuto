@@ -21,6 +21,7 @@
 |T19| Bögös Bálint | 2021.10.04. 09:51| Rendelések listázása | Kiválasztott megrendelő adatainak kilistázása | Megrendelő személyes adatai megjelenítése a képernyőn| Minden adat megfelelően megjelenik | Beta 1.10 |
 |T20| Csomós Patrik | 2021.10.04. 10:12| Rendelések sátuszának módosítása | Az adatbázisban módosítja a rendelés státuszát | A rendelés státuszának módosítása után megváltoznak az adatok az adatbázisban| A rendelések státusza megfelelően módosult | Beta 1.10 |
 |T21| Bögös Bálint | 2021.10.04. 19:41| Rendelések exportálása | Az adatbázisból lekéri a rendelési adatokat és excel dokumentumba exportálja | Excel dokumentumban letölti a rendeléseket| Nem találja az importáláshoz szükséges kódot | Beta 1.10 |
+|T22| Bögös Bálint | 2021.10.04. 19:49| Rendelések exportálása | Az adatbázisból lekéri a rendelési adatokat és excel dokumentumba exportálja | Excel dokumentumban letölti a rendeléseket| Sikeresen exportálja a rendeléseket | Beta 1.11 |
 
 # Szélsőérték funkcionális teszt
 | Sorszám |Név | Dátum| Funkció leírása| Vizsgálat módja/eszköze, részletes leírása | Elvárt eredmény| Eredmény |Verzió |
