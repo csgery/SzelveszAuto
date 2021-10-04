@@ -1,6 +1,6 @@
 <?php
 
-$staffs = db_fetch('SELECT * FROM users WHERE auth=1');
+$staffs = db_fetchall('SELECT * FROM users WHERE auth=1');
 
 
 

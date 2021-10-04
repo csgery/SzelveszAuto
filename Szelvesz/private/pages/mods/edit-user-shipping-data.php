@@ -69,24 +69,24 @@ if(isset($_POST['data-submit'])){
 
 
         <div class='input-group <?=  $errors['postal_code'] ? $errorBorderClass : '' ?>  p-3'>
-            <label for='lastname' class='me-3'>Irányítószám:</label>
+            <label for='postal_code' class='me-3'>Irányítószám:</label>
             <input type="text" id="postal_code" name="postal_code" placeholder='<?= $_SESSION['user']['postal_code'] ?>' class='form-control'>
         </div>
 
         <div class='input-group <?=  $errors['city'] ? $errorBorderClass : '' ?>  p-3'>
-            <label for='firstname' class='me-3'>Város:</label>
+            <label for='city' class='me-3'>Város:</label>
             <input type="text" id="city" name="city" placeholder='<?= $_SESSION['user']['city'] ?>' class='form-control'>
         </div>
 
 
         <div class='input-group <?=  $errors['street'] ? $errorBorderClass : '' ?>  p-3'>
-            <label for='phone_number' class='me-3'>Utca:</label>
+            <label for='street' class='me-3'>Utca:</label>
             <input type="text" id="street" name="street" placeholder='<?= $_SESSION['user']['street'] ?>' class='form-control'>
         </div>
 
 
         <div class='input-group <?=  $errors['house_number'] ? $errorBorderClass : '' ?>  p-3'>
-            <label for='phone_number' class='me-3'>Házszám:</label>
+            <label for='house_number' class='me-3'>Házszám:</label>
             <input type="text" id="house_number" name="house_number" placeholder='<?= $_SESSION['user']['house_number'] ?>' class='form-control'>
         </div>
 

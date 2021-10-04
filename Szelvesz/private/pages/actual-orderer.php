@@ -44,10 +44,10 @@ $user = db_fetch('users', 'username LIKE :username', [
 
     <tbody>
     <tr>
-        <th scope="row"> <?= $car['postal_code'] ?> </th>
-        <td><?= $car['city'] ?></td>
-        <td><?= $car['street'] ?></td>
-        <td><?= $car['house-number'] ?></td>
+        <th scope="row"> <?= $user['postal_code'] ?> </th>
+        <td><?= $user['city'] ?></td>
+        <td><?= $user['street'] ?></td>
+        <td><?= $user['house-number'] ?></td>
     </tr>
     </tbody>
 </table>

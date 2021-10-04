@@ -117,7 +117,7 @@ function validate_user_login_edit(array $request): array{
 
     if(!empty($request['password'])) {
 
-        if (strlen($request['password']) > 8) {
+        if (strlen($request['password']) < 8) {
             $error['password'][] = 'A jelszó legalább 8 karakter!';
         } else if ($request['password'] !== $request['password_confirmation']) {
             $error['password_confirmation'][] = 'A jelszó és a megerősítése nem egyezik!';

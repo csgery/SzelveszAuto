@@ -15,12 +15,12 @@ function login(){
 
 if(isset($_POST['submit'])){
 
-
+    $errors = validate_user_reg($_POST);
         
 
     if(empty($errors)){
             db_execute('INSERT INTO `users` (username, email, password, auth) VALUES (:username, :email, :password, :auth)', [
-                ':id' => uniqid('', true),
+                //':id' => uniqid('', true),
                 ':username' => $_POST['username'],
                 ':email' => $_POST['email'],
                 ':password' => password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]),
